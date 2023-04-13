@@ -4,12 +4,14 @@ let decryptionBtn = document.querySelectorAll(".btn-wrapper button")[1];
 let textareaContent = document.getElementsByTagName("textarea");
 let showInfo = document.getElementById("show-info");
 
+let copyConfirmer = document.getElementById("copy-confirmer");
+
 cryptographyBtn.addEventListener("click",()=>{
     showInfo.innerHTML = `
         <p id="generated-content">${cryptography(true,textareaContent[0].value)}</p>
         <button id="copy-btn">Copiar</button>
     `;
-    showInfo.style.justifyContent = "space-around";
+    showInfo.style.justifyContent = "space-between";
     showInfo.style.textAlign = "left";
     enableCopyBtn();
 });
@@ -19,7 +21,7 @@ decryptionBtn.addEventListener("click",()=>{
         <p id="generated-content">${cryptography(false,textareaContent[0].value)}</p>
         <button id="copy-btn">Copiar</button>
     `;
-    showInfo.style.justifyContent = "space-around";
+    showInfo.style.justifyContent = "space-between";
     showInfo.style.textAlign = "left";
     enableCopyBtn();
 });
@@ -47,5 +49,6 @@ function enableCopyBtn(){
     let copyBtn = document.getElementById("copy-btn");  
     copyBtn.addEventListener("click",()=>{
         navigator.clipboard.writeText(generatedContent.innerText);
+        alert("Texto copiado com sucesso!");
     });
 }
