@@ -1,0 +1,119 @@
+@import "./colors.css";
+@import "./general.css";
+
+body {
+    background-color: #E5E5E5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+header .container {
+    padding: 2% 3%;
+}
+
+main .container {
+    display: flex;
+    padding: 3% 5%;
+    gap: 22px;
+}
+
+#insert-info {
+    width: 60%;
+}
+
+#show-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    background-color: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#insert-info textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    min-height: 400px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+#insert-info span {
+    display: flex;
+    align-items: center;
+    gap: 4.8px;
+    color: var(--gray-400-color);
+    margin: 12px 0;
+}
+
+.btn-wrapper {
+    display: flex;
+    gap: 18px;
+}
+
+button {
+    width: 100%;
+    max-width: 328px;
+    height: 67px;
+    line-height: 67px;
+    font-size: 1rem;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-wrapper button:nth-of-type(1) {
+    color: var(--light-gray-color);
+    background-color: var(--primary-color);
+}
+
+.btn-wrapper button:nth-of-type(2),
+#copy-btn {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid #0A3871;
+}
+
+.btn-wrapper button:nth-of-type(1):hover {
+    background-color: var(--hover-primary-color);
+}
+
+.btn-wrapper button:nth-of-type(2):hover {
+    background-color: var(--hover-light-gray-color);
+}
+
+#show-info h1 {
+    color: var(--gray-500-color);
+    font-size: 1.5rem;
+}
+
+#show-info span {
+    color: var(--gray-400-color);
+    font-size: 1rem;
+}
+
+#show-info p {
+    width: 100%;
+    word-wrap: break-word;
+    color: var(--gray-400-color);
+    height: 100%;
+}
+
+#copy-btn:hover {
+    background-color: var(--light-gray-color);
+}
