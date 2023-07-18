@@ -1,5 +1,7 @@
 # Challenge Oracle ONE | Text Decoder
 
+<img alt="Project status" title="Project status" src="https://badgen.net/badge/status/complete/green?icon=github">
+
 !['Text decoder program 1'](./images/text-decoder-program-1.JPG 'Text decoder program 1')
 !['Text decoder program 2'](./images/text-decoder-program-2.JPG 'Text decoder program 2')
 
